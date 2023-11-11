@@ -79,6 +79,9 @@ class _SignInState extends State<SignIn> {
                   ElevatedButton(
                       onPressed: () async {
                         if (_formkey.currentState!.validate()) {
+                          setState(() {
+                            error = 'Loading...';
+                          });
                           dynamic result = await _auth
                               .signInWithEmailAndPassword(email, password);
                           if (result == null) {
