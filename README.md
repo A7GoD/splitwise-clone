@@ -58,3 +58,4 @@ App to handle shared expenses. Form groups or split with individual friends.
 
 - Run with `flutter run`.
 
+- Works with flutter 2.8.0
